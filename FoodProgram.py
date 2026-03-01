@@ -27,7 +27,7 @@ order_total = 0
 for entry in dict.values():
     transaction = fc.Transaction(entry[0], entry[1], entry[2], entry[3])
     
-    if transaction.get_customerid() == active_customer.get_customer_id():
+    if transaction.get_customer_id() == active_customer.get_customer_id():
         print(f"Order Item: {transaction.get_item_name()}  Price: ${transaction.get_cost():.2f}")
         order_total += transaction.get_cost()
 

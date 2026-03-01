@@ -33,7 +33,7 @@ class Transaction:
         self._date = date
         self._item_name = item_name
         self._cost = cost
-        self._customerid = customer_id
+        self._customer_id = customer_id
 
     def get_date(self):
         return self._date
@@ -44,5 +44,5 @@ class Transaction:
     def get_cost(self):
         return self._cost
 
-    def get_customerid(self):
+    def get_customer_id(self):
         return self._customer_id
